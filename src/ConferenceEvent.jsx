@@ -143,6 +143,7 @@ const ConferenceEvent = () => {
     const mealsTotalCost = calculateTotalCost("meals");
     const venueTotalCost = calculateTotalCost("venue");
     const avTotalCost = calculateTotalCost("av");
+    const items = getItemsFromTotalCost();
 
     const navigateToProducts = (idType) => {
         if (idType == '#venue' || idType == '#addons' || idType == '#meals') {
